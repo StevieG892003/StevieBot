@@ -8,7 +8,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f'Bot is online as {bot.user}')
+    print("Bot is online and ready!")
 
 @bot.command()
 async def ping(ctx):
