@@ -14,5 +14,7 @@ async def on_ready():
 async def ping(ctx):
     await ctx.send("Pong!")
 
-bot.run("DISCORD TOKEN")
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
+
 
